@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/")
 public class Controller {
 
+	private static final String text = Math.random() + "";
+
 	@RequestMapping(method = RequestMethod.GET)
 	public String index() {
-		return "Hello World 2!";
+		return "Hello World! random text:" + text ;
 	}
 }
